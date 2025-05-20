@@ -1,0 +1,20 @@
+body{
+  background-color: #0e002e;
+  font-family: system-ui;
+  position: relative;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style: none;
+}
+ul li{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}

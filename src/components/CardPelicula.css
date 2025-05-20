@@ -1,0 +1,79 @@
+.card-conteiner{
+  border-radius: 10px;
+  overflow: hidden;
+  width: 12rem;
+  overflow: hidden;
+  background-color: #0d002b;
+  &:hover img{
+    transform: scale(1.2);
+  }
+  &:hover .button-conteiner {
+    display: flex;
+  }
+  &:hover .button-conteiner .card-header-button{
+    transform: scale(1);
+  }
+}
+
+/* Estilos de contenedor de portada de pelicula*/
+
+.card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-header img{
+  width: 100%;
+  transition: all ease .2s;
+}
+
+.button-conteiner{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  background-color: #000000b7;
+
+  z-index: 1;
+  
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+}
+.card-header-button{
+  color: white;
+  background: none;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: all ease .2s;
+  transform: scale(0);
+  font-weight: 400;
+  &:hover{
+    color: #00eeff ;
+    border-color: #00eeff;
+  }
+}
+
+
+/* Estilos del body */
+.card-body{
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-body h2{
+  text-align: center;
+  font-size: 0.8rem;
+  color: white;
+  cursor: pointer;
+  &:hover{
+    color: #00eeff;
+  }
+}

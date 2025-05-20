@@ -1,0 +1,10 @@
+.conteiner-listado-peliculas{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5rem;
+  gap: 2.5rem;
+  justify-content: center;
+}
+.main-conteiner{
+  margin-top: 2rem;
+}

@@ -1,0 +1,36 @@
+/* Estilos del contenedor del header */
+.header-container{
+  background-color: #070018;
+  height: 10vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+  align-items: center;
+}
+
+/* Estilos del logo */
+.header-logo-container img{
+  width: 4rem;
+}
+
+/* Estilos de nav */
+
+.header-nav-lista{
+  gap: 1rem;
+  display: flex;
+}
+.header-nav-lista-item{
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-bottom: 3px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+  &:hover{
+    border-bottom: 3px solid aqua;
+  }
+}
+.seccion-actual{
+  color: aqua;
+  border-bottom: 3px solid aqua;
+}
