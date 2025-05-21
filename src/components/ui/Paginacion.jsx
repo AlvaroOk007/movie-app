@@ -1,4 +1,4 @@
-import './Paginacion.css'
+import './ui-styles/Paginacion.css'
 export function Paginacion({numPage,funcion}){
   const handleClick = (op)=>{
     funcion(numPage + op)

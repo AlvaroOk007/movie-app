@@ -1,4 +1,4 @@
-import './Filtros.css'
+import './ui-styles/Filtros.css'
 
 export function Filtros(){
   return(

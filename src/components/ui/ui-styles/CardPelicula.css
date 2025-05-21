@@ -63,7 +63,21 @@
   }
 }
 
-
+/* Estilos de numero de tendencia */
+.card-header-num-tendencia{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.863);
+  font-weight: 900;
+  color: white;
+  border-radius: 0 0 0 10px;
+  font-size: 2rem;
+}
+.card-header-num-tendencia-numeral{
+  font-size: 1.4rem;
+}
 /* Estilos del body */
 .card-body{
   margin-top: 10px;

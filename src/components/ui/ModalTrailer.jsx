@@ -1,4 +1,4 @@
-import './ModalTrailer.css'
+import './ui-styles/ModalTrailer.css'
 export function ModalTrailer({trailerKey,funcion}){
   const handleClick = (funcion)=>{
     funcion(false)
@@ -6,7 +6,11 @@ export function ModalTrailer({trailerKey,funcion}){
   return(
     <article className='conteiner-modal-trailer'>
       <button className='modal-btn-salir' onClick={()=>{handleClick(funcion)}}>×</button>
-      <iframe src={`https://www.youtube.com/embed/${trailerKey}`} frameborder="0"></iframe>
+      <iframe 
+        src={`https://www.youtube.com/embed/${trailerKey}`} 
+        frameborder="0"
+        allowFullScreen
+      ></iframe>
     </article>
   )
 }

@@ -1,11 +1,17 @@
-import './CardPelicula.css'
-export function CardPelicula({ pelicula,handleClick }) {
+import './ui-styles/CardPelicula.css'
+export function CardPelicula({ pelicula,handleClick,indice, esTendencia}) {
   return (
     <article className='card-conteiner'>
       <div className='card-header'>
         <div className="button-conteiner">
           <button className='card-header-button' onClick={()=>{handleClick(pelicula.trailerKey)}}>Ver Trailer</button>
         </div>
+        {esTendencia &&
+          <p className='card-header-num-tendencia'>
+            <span className='card-header-num-tendencia-numeral'>#</span>
+            {indice+1}
+          </p>
+        }
         <img
           src={'https://image.tmdb.org/t/p/original/' + pelicula.poster_path}
           alt=''

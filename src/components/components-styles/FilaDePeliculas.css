@@ -1,0 +1,25 @@
+/* Contenedor de listado de peliculas */
+.conteiner-listado-peliculas{
+  display: flex;
+  gap: 2.5rem;
+  justify-content: flex-start;
+}
+/* Estilos de scroll-bar */
+.scroll-bar-conteiner{
+  overflow-x:scroll;
+  scrollbar-color: rgba(0, 255, 255, 0) rgba(150, 142, 129, 0);
+  &:hover{
+    scrollbar-color: rgb(0, 255, 255) rgba(150, 142, 129, 0);
+  }
+}
+/* Estilos del titulo de la seccion */
+.conteiner-title-section{
+  margin: 3rem 0 2rem 0;
+}
+.title-section{
+  font-weight: 500;
+  display: inline;
+  color: white;
+  font-size: 1.3rem;
+  border-bottom: 2px solid rgba(0, 255, 255, 0.719);
+}
