@@ -1,7 +1,7 @@
 import './Header.css'
 export function Header(){
   return(
-    <header className='header-container'>
+    <header className='header-container' id='Inicio'>
       <div className="header-logo-container">
         <img src='../../public/logo.png' alt="" />
       </div>

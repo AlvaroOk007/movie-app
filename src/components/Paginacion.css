@@ -1,0 +1,35 @@
+.paginacion-contenedor{
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.paginacion-btn{
+  display: flex;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all ease .2s;
+  padding: 0.5rem;
+  border-radius: 10px;
+  &:hover{
+    background-color: #1f0c4b;
+  }
+}
+.paginacion-num{
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.btn-disactivado{
+  color:rgb(110, 110, 110);
+  &:hover{
+    color: rgb(110, 110, 110);
+  }
+}

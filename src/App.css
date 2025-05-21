@@ -6,5 +6,22 @@
   justify-content: center;
 }
 .main-conteiner{
-  margin-top: 2rem;
+  margin: 2rem 4rem 0 4rem;
+}
+.conteiner-title-section{
+  margin-bottom: 2rem;
+  /* display: flex;
+  flex-direction: row-reverse;
+  align-items: center; */
+}
+.title-section{
+  font-weight: 400;
+  color: white;
+  font-size: 1.3rem;
+}
+.title-line{
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.445);
+  margin-top: 0.5rem;
 }
