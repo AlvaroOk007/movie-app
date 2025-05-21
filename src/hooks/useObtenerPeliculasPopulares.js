@@ -11,7 +11,6 @@ export const useObtenerPeliculas = (numPage = 1) => {
       .then((res) => res.json())
       .then(async (movies) => {
         const allMoviesPromises = movies.results.map(async (movie) => {
-          console.log(movie)
           const video = await fetch(
             `https://api.themoviedb.org/3/movie/${movie.id}/videos?api_key=${API_KEY}&language=es-MX`
           );

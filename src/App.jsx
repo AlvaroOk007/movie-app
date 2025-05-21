@@ -26,7 +26,7 @@ export function App() {
           <div className="title-line"></div>
         </div>
         {mostrarTrailer && <ModalTrailer trailerKey = {trailerKey} funcion={setMostrarTrailer}/>}
-        <section className='conteiner-listado-peliculas'>
+        <section className='conteiner-listado-peliculas scroll-bar-conteiner'>
           {peliculas &&
             peliculas.map((pelicula) => (
               <CardPelicula 
@@ -35,6 +35,7 @@ export function App() {
                 handleClick= {handleClickVerTrailer}
               />
             ))}
+          <button>Ver Más</button>
         </section>
       </main>
       <Paginacion numPage={numPage} funcion={setNumPage} />

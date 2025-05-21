@@ -3,6 +3,7 @@
   height: 100vh;
   position: fixed;
   top: 0;
+  left: 0;
   background-color: #09001ddc;
   z-index: 2;
   display: flex;

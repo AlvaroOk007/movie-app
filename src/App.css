@@ -1,9 +1,13 @@
+/* Contenedor de listado de peliculas */
 .conteiner-listado-peliculas{
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 5rem;
   gap: 2.5rem;
-  justify-content: center;
+  justify-content: flex-start;
+}
+/* Estilos de scroll-bar */
+.scroll-bar-conteiner{
+  overflow-x:scroll;
+  scrollbar-color: aqua rgba(150, 142, 129, 0)
 }
 .main-conteiner{
   margin: 2rem 4rem 0 4rem;
@@ -20,7 +24,8 @@
   font-size: 1.3rem;
 }
 .title-line{
-  width: 100%;
+  max-width: 100%;
+
   height: 1px;
   background-color: rgba(255, 255, 255, 0.445);
   margin-top: 0.5rem;
