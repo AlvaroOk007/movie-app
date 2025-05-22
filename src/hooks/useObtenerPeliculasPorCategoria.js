@@ -5,8 +5,9 @@ export const useObtenerPeliculasPorCategoria = (categoria,numPage = 1) => {
   const [peliculas, setPeliculas] = useState();
   useEffect(() => {
     // Consulta a para las peliculas
+    console.log(categoria)
     fetch(
-      `https://api.themoviedb.org/3/movie/${categoria}?api_key=${API_KEY}&language=es-ES&page=${numPage}`
+      `https://api.themoviedb.org/3/${categoria}?api_key=${API_KEY}&language=es-ES&page=${numPage}`
     )
       .then((res) => res.json())
       .then(async (movies) => {

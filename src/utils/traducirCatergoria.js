@@ -2,24 +2,24 @@ export function traducirCategoria(categoria){
   let categoriaTitle,categoriaConsulta = ''
   switch (categoria){
     case 'tendencias':
-      categoriaConsulta = 'top_rated'
-      categoriaTitle = 'Tendencias'
+      categoriaConsulta = 'trending/movie/week'
+      categoriaTitle = 'Tendencias de la semana'
       break
     case 'proximoEstreno':
-      categoriaConsulta = 'upcoming'
+      categoriaConsulta = 'movie/upcoming'
       categoriaTitle = 'Proximamente en Cines'
       break
     case 'populares':
-      categoriaConsulta = 'popular'
+      categoriaConsulta = 'movie/popular'
       categoriaTitle = 'Los mas populares'
       break
     case 'ahoraEnCines':
-      categoriaConsulta = 'now_playing'
+      categoriaConsulta = 'movie/now_playing'
       categoriaTitle='Ahora en cines'
       break
     default:
-      categoriaConsulta = 'top_rated' 
-      categoriaTitle = 'Tendencias'
+      categoriaConsulta = 'trending/movie/week' 
+      categoriaTitle = 'Tendencias de la semana'
       break
   }
   return {categoriaTitle,categoriaConsulta}
