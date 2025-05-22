@@ -39,6 +39,7 @@ cd movie-app
 ```env
   VITE_TMDB_API_KEY=TU_API_KEY
 ```
+> Podés conseguir una API key gratuita en: https://developer.themoviedb.org/
 4. Iniciá el proyecto
 
 ```bash
