@@ -8,7 +8,7 @@ export function Paginacion({numPage,funcion}){
     <section className='paginacion-contenedor'>
       <button href= "#Inicio"className= {`paginacion-btn ${numPage===1 ? 'btn-disactivado':''}`}onClick={()=>{handleClick(-1)}} disabled={numPage === 1} > {"<"} </button>
       <span className='paginacion-num'>{numPage}</span>
-      <button href= "#Inicio"className= 'paginacion-btn'onClick={()=>{handleClick(+1)}}> {">"} </button>
+      <button className= 'paginacion-btn'onClick={()=>{handleClick(+1)}}> {">"} </button>
     </section>
   )
 }

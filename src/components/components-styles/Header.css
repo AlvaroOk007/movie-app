@@ -1,5 +1,8 @@
 /* Estilos del contenedor del header */
 .header-container{
+  top: 0;
+  z-index: 5;
+  position: sticky;
   background-color: #070018;
   height: 10vh;
   overflow: hidden;
@@ -34,3 +37,5 @@
   color: aqua;
   border-bottom: 3px solid aqua;
 }
+
+/* Animacion del logo al hover */

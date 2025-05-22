@@ -1,6 +1,7 @@
-import { CardPelicula } from './ui/CardPelicula.jsx'
+import { Card } from './ui/Card.jsx'
+import {Link} from 'react-router-dom'
 import './components-styles/FilaDePeliculas.css'
-export function FilaDePeliculas({ peliculas,funcionVerTrailer,tituloSeccion,esTendencia=false }) {
+export function FilaDePeliculas({ peliculas,funcionVerTrailer,tituloSeccion,esTendencia=false,categoria }) {
   return (
     <>
       <div className="conteiner-title-section">
@@ -9,7 +10,7 @@ export function FilaDePeliculas({ peliculas,funcionVerTrailer,tituloSeccion,esTe
       <section className='conteiner-listado-peliculas scroll-bar-conteiner'>
         {peliculas &&
           peliculas.map((pelicula, index ) => (
-            <CardPelicula
+            <Card
               key={pelicula.id}
               pelicula={pelicula}
               handleClick={funcionVerTrailer}
@@ -17,7 +18,7 @@ export function FilaDePeliculas({ peliculas,funcionVerTrailer,tituloSeccion,esTe
               esTendencia={esTendencia}
             />
           ))}
-        <button>Ver Más</button>
+        <Link className='listado-peliculas-btn-mostrar-mas' to={`/peliculas/categoria/${categoria}`}>Ver Más</Link>
       </section>
     </>
   )

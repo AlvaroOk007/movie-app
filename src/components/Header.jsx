@@ -1,14 +1,23 @@
 import './components-styles/Header.css'
-export function Header(){
+import { Link } from 'react-router-dom'
+export function Header({paginaActual}){
   return(
     <header className='header-container' id='Inicio'>
-      <div className="header-logo-container">
-        <img src='/logo.png' alt="" />
-      </div>
+      <Link to='/home/peliculas'className="header-logo-container">
+        <img src='/logo.png' alt="Logo de mi página" className='logo-animation'/>
+      </Link>
       <nav className='header-nav-conteiner'>
         <ul className='header-nav-lista'>
-          <li className='header-nav-lista-item seccion-actual'>Peliculas</li>
-          <li className='header-nav-lista-item'>Series</li>
+          <Link 
+            to={'/home/peliculas'}
+            className={`header-nav-lista-item ${paginaActual === 'peliculas' ? 'seccion-actual' : ''}`}>
+              Peliculas
+          </Link>
+          <Link 
+            to={'/home/series'}
+            className={`header-nav-lista-item ${paginaActual === 'series' ? 'seccion-actual' : ''}`}>
+              Series
+          </Link>
         </ul>
       </nav>
     </header>

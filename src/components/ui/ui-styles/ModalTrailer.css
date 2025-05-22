@@ -5,7 +5,8 @@
   top: 0;
   left: 0;
   background-color: #09001ddc;
-  z-index: 2;
+  z-index: 6;
+
   display: flex;
   justify-content: center;
   align-items: center;

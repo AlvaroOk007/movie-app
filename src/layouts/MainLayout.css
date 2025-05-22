@@ -1,0 +1,18 @@
+.main-conteiner{
+  margin:0 4rem ;
+}
+
+
+/* Titulos de los mains */
+.main-title-conteiner{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.main-title{
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+  border-bottom: 2px solid aqua;
+}

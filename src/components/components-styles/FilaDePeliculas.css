@@ -1,8 +1,10 @@
 /* Contenedor de listado de peliculas */
 .conteiner-listado-peliculas{
   display: flex;
+  align-items: center;
   gap: 2.5rem;
   justify-content: flex-start;
+  flex: 1;
 }
 /* Estilos de scroll-bar */
 .scroll-bar-conteiner{
@@ -22,4 +24,23 @@
   color: white;
   font-size: 1.3rem;
   border-bottom: 2px solid rgba(0, 255, 255, 0.719);
+}
+
+/* Estilos de boton de ver mas */
+.listado-peliculas-btn-mostrar-mas{
+  min-width: 5rem;
+  height: 2rem;
+  border-radius: 10px;
+  border: 2px solid #0e002e;
+  color: rgb(83, 255, 198);
+  background-color: #0e002e;
+  cursor: pointer;
+  transition: all ease .2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover{
+    background-color: aquamarine;
+    color: #0e002e;
+  }
 }

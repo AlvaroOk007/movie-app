@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
-export const useObtenerPeliculas = (numPage = 1) => {
+export const useObtenerPeliculasPorCategoria = (categoria,numPage = 1) => {
   const [peliculas, setPeliculas] = useState();
   useEffect(() => {
     // Consulta a para las peliculas
     fetch(
-      `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=es-ES&page=${numPage}`
+      `https://api.themoviedb.org/3/movie/${categoria}?api_key=${API_KEY}&language=es-ES&page=${numPage}`
     )
       .then((res) => res.json())
       .then(async (movies) => {
@@ -24,6 +24,6 @@ export const useObtenerPeliculas = (numPage = 1) => {
         const allMovies = await Promise.all(allMoviesPromises);
         setPeliculas(allMovies);
       });
-  }, [numPage]);
+  }, [categoria,numPage]);
   return {peliculas,setPeliculas}
 };

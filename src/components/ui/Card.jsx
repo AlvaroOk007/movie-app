@@ -1,5 +1,5 @@
 import './ui-styles/CardPelicula.css'
-export function CardPelicula({ pelicula,handleClick,indice, esTendencia}) {
+export function Card({ pelicula,handleClick,indice = 0, esTendencia = false}) {
   return (
     <article className='card-conteiner'>
       <div className='card-header'>
