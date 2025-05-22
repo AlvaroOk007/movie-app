@@ -1,12 +1,69 @@
-# React + Vite
+# 🎬 MovieApp - Maquetado con React + TMDB API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación web de maquetado donde se consume la API de [The Movie Database (TMDB)](https://www.themoviedb.org/) para mostrar distintas categorías de películas en una interfaz responsiva, utilizando **React**, **React Hooks** y **CSS puro**.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- React DOM
+- React Router DOM (para las rutas)
+- React Hooks (`useState`, `useEffect`, `useParams`)
+- CSS puro (sin frameworks de UI)
+- API REST de TMDB
 
-## Expanding the ESLint configuration
+## 📸 Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Ver películas por categorías: Tendencias, Populares, En Cartelera, Próximamente.
+- Ver tráileres de películas (embed desde YouTube).
+- Navegación entre secciones con React Router.
+- Diseño responsive y accesible.
+- Scroll horizontal y verticales para las películas.
+- Modal animado para el tráiler.
+- Dinamismo total con carga desde API externa.
+
+## ⚙️ Instalación
+
+1. Cloná el repositorio:
+
+```bash
+git clone https://github.com/tuusuario/movie-app.git
+cd movie-app
+```
+2. Instalá dependencias:
+```bash
+  npm install
+```
+3. Configurá tu API key de TMB:
+
+- Crea un archivo `env` en la raíz de tu proyecto con la siguiente variable
+```env
+  VITE_TMDB_API_KEY=TU_API_KEY
+```
+4. Iniciá el proyecto
+
+```bash
+npm run dev
+```
+
+## 📦 Dependencias
+
+```json
+"dependencies": {
+  "react": "^18.x",
+  "react-dom": "^18.x",
+  "react-router-dom": "^6.x"
+}
+```
+
+## 🎨 Estilos
+- Todos los estilos están escritos con CSS puro organizados por componente (opcionalmente 1 archivo `.css` por componente).
+
+## 📌 Estado del proyecto
+
+✅ Proyecto funcional y en desarrollo activo.
+📅 Última actualización: Mayo 2025
+🎯 Objetivo: Practicar integración con API externas, maquetado moderno, manejo de estado y rutas en React.
+
+## 📬 Contacto
+
+- Email: bravoalva19@gmail.com
