@@ -9,7 +9,7 @@ export function App() {
       <Route path="/home/peliculas" element={<InicioPeliculas/>} />
       <Route path='/home/series' element={<InicioSeries/>}/>
       <Route path='/peliculas/categoria/:categoria' element={<PeliculasCategorias />} />
-      <Route path='*' element={<h2 style={{color: 'white'}}>404 - Pagina no encontrada</h2>} />
+      <Route path='*' element={<InicioPeliculas />} />
     </Routes>
   );
 }
