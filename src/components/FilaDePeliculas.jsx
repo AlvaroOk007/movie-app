@@ -5,7 +5,10 @@ export function FilaDePeliculas({ peliculas,funcionVerTrailer,tituloSeccion,esTe
   return (
     <>
       <div className="conteiner-title-section">
-        <h2 className='title-section'>{tituloSeccion}</h2>
+        <Link 
+          to={`/peliculas/categoria/${categoria}`}
+          className='title-section'>{tituloSeccion}
+        </Link>
       </div>
       <section className='conteiner-listado-peliculas scroll-bar-conteiner'>
         {peliculas &&
